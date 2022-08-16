@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>
+        LOGIN FORM
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+        function check() {
+            var u = document.getElementById("Username").value;
+            var p = document.getElementById("pass").value;
+
+            if (u == "Nupur" && p == "myname") {
+                //document.write("login correct")
+                document.getElementById("my para").innerHTML = "You have been successfully login!!";
+
+            }
+            else {
+                //document.write("login incorrect")
+                document.getElementById("my para").innerHTML = "OPPS....Login Incorrect!!";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="login_box">
+        <img src="c.png" class="logpic">
+
+        <br> <br>
+        <center>
+
+            <h1>Login Here!!!</h1><br>
+
+            <form action="login_page.html">
+                <p id="my para"></p>
+                <p class="text1">Username</p>
+                <input type="text" name="text" placeholder="Enter Username" id="Username">
+
+                <p class="text1">Password</p>
+                <input type="password" name="password" placeholder="Enter Password" id="pass">
+                <br>
+                <br>
+                <br>
+
+                <button onclick="check()" class="btn_log">LOGIN</button>
+                <br> <br>
+
+                <a href="#">Forget Password?</a> <br>
+                <a href="file:///E:/html/reg.html">Don't have an account?</a>
+
+            </form>
+        </center>
+
+    </div>
+
+
+</body>
+
+</html>
